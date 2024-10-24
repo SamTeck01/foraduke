@@ -1,0 +1,7 @@
+body {
+    background-color: #f3e0d1;
+    font-family: 'Indie Flower', cursive;
+}
+.messageIcon:hover{
+    color: #f3e0d1;
+}
