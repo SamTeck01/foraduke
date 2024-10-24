@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ReactWhatsapp from 'react-whatsapp';
+import 'boxicons';
 import './App.css'
-import './assets/boxicons-2.1.4 (2)/boxicons-2.1.4/css/boxicons.min.css';
 import TheModal from './theModal';
 import sunflower from './assets/sunflower.gif';
 import aishainfo from './assets/aisha-info.jpg';
@@ -41,14 +41,14 @@ function App() {
 
         <div className="flex justify-end">
           <ReactWhatsapp number='+2349023036748' message={input} >
-            <button className='bg-green-500 w-fit p-2.5 rounded-full float-right flex'><i className="bx bxs-send text-white bx-xsm "></i> </button>
+            <button className='bg-green-500 w-fit p-2.5 rounded-full float-right flex'><box-icon type='solid' name='send' color='white' ></box-icon> </button>
           </ReactWhatsapp>
         </div>
       </div>
     </div>
     
     <img src={samteck} alt="SamTeck Logo" width={100} className='absolute -bottom-7 right-2' />
-    <p className='mt-4 text-xl font-indie'><span className='text-black italic underline '>Note:</span> Message sent here are sent to Abdul Samads Whatsapp</p>
+    <p className='mt-4 text-xl font-indie'><span className='text-black italic underline '>Note:</span> Message sent here are sent to Abdul Samads Whatsapp and if the message didn't send you can comeback and resend it </p>
   </div>
 
   return (
@@ -61,9 +61,9 @@ function App() {
 
       <h1 className="400px:text-5xl mb-3 400px:-mt-0 font-indie">For Aduke</h1>
 
-      <TheModal element={chatHimUp} height={320} width={350}>
+      <TheModal element={chatHimUp} height={370} width={350}>
         <div className="absolute border-2 400px:p-2 flex top-6 border-black rounded-full right-4 hover:bg-gray-50 messageIcon">
-            <i className="bx bx-message-dots bx-md "></i>
+          <box-icon name='message-dots' size='sm' ></box-icon>
         </div>
       </TheModal>
 
