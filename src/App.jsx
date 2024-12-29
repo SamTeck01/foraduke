@@ -10,7 +10,7 @@ import samteckProfile from './assets/SamTeck Profile.jpg'
 
 function App() {
   const messages = [
-    <p>Hey! Just wanted to say that you were on my mind today. Hope you’re having a great day!</p>,
+    <p className='text-3xl font-indie'>Hey! Just wanted to say that you were on my mind today. Hope you’re having a great day!</p>,
     <div className='text-3xl font-indie'><h2 className='text-center text-4xl font-indie' >Aduke, Much Loved</h2> In a world where moments shine,
     Aduke, pookie, you’re simply divine.
     A name that brightens up my day,
@@ -20,9 +20,28 @@ function App() {
     Turning shadows into pure delight.
     With every chat, my heart takes flight,
     Aduke, cherished, you feel so right.</div>,
-    "Hey! I just wanted to say that you are truly amazing. Your intelligence, and sense of humor never cease to impress me!",
+    "Hey! I just wanted to say that you are truly amazing. Your intelligence and bravery never cease to impress me!",
+    <div className='text-3xl font-indie'><h2 className='text-center text-4xl font-indie' >Aisha, Alive and Well    </h2> In a world where hopes collide,
+    Aisha shines, my heart’s bright guide.
+    A name that dances in the air,
+    Bringing joy that’s sweet and rare.
+    
+    Alive and well, you light the way,
+    In every smile, you brighten my day.
+    With each word, my spirits soar,
+    Aisha, cherished, I adore.</div>,
     "What’s the best thing that happened to you today? I’d love to hear about it!",
-    "Just wanted to let you know that your voice is absolutely adorable! It always brightens my day when I hear it."
+    <div className='text-3xl font-indie'><h2 className='text-center text-4xl font-indie' >Aisha, My Muse
+    </h2> In every word, your wisdom gleams,
+Aisha, you inspire my dreams.
+With a cute voice that gently calls,
+You brighten my days, you break down walls.
+
+Alive and well, you’re a breath of fresh air,
+With each clever thought, you show how much you care.
+In your presence, time gracefully flows,
+Aisha, my crush, how my admiration grows.</div>,
+'I love You pookie'
   ]
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState('')
