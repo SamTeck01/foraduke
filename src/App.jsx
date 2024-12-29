@@ -95,7 +95,7 @@ Aisha, my crush, how my admiration grows.</div>,
         </div>
       </TheModal>
 
-      <div className="flex justify-between flex-col items-center h-[600px] bg-primary ">
+      <div className="flex justify-between flex-col items-center h-[600px]">
         <img src={sunflower} width={400} alt="Two sunflowers with green stems and leaves" className="mb-5" />
 
         <footer className='w-full relative flex justify-center flex-col '>
