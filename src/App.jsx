@@ -10,9 +10,18 @@ import samteckProfile from './assets/SamTeck Profile.jpg'
 
 function App() {
   const messages = [
-    'Hey! Just wanted to say that you were on my mind today. Hope you’re having a great day!',
-    "What’s the best thing that happened to you today? I’d love to hear about it!",
+    <p>Hey! Just wanted to say that you were on my mind today. Hope you’re having a great day!</p>,
+    <div className='text-3xl font-indie'><h2 className='text-center text-4xl font-indie' >Aduke, Much Loved</h2> In a world where moments shine,
+    Aduke, pookie, you’re simply divine.
+    A name that brightens up my day,
+    In your laughter, worries fade away.
+    
+    Much loved, you spark a gentle light,
+    Turning shadows into pure delight.
+    With every chat, my heart takes flight,
+    Aduke, cherished, you feel so right.</div>,
     "Hey! I just wanted to say that you are truly amazing. Your intelligence, and sense of humor never cease to impress me!",
+    "What’s the best thing that happened to you today? I’d love to hear about it!",
     "Just wanted to let you know that your voice is absolutely adorable! It always brightens my day when I hear it."
   ]
   const [index, setIndex] = useState(0);
