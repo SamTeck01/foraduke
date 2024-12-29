@@ -95,19 +95,20 @@ Aisha, my crush, how my admiration grows.</div>,
         </div>
       </TheModal>
 
-      <img src={sunflower} width={400} alt="Two sunflowers with green stems and leaves" className="mb-5" />
+      <div className="flex justify-between flex-col items-center h-[600px] bg-primary ">
+        <img src={sunflower} width={400} alt="Two sunflowers with green stems and leaves" className="mb-5" />
 
-      <footer className='w-full 400px:absolute 400px:bottom-3 450px:relative flex justify-center flex-col '>
-        <div className=" w-full border-solid border-y-2 text-center p-4 border-black font-indie cursor-pointer" onClick={()=>changeMessage() } >
-            <p className="text-3xl font-indie ">{messages[index] }</p>
-        </div>
-        <div className="w-full px-6 flex justify-between items-center mt-2">
-            <p className="text-2xl font-bold font-indie">{`${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()} `}</p>
-            <p className="text-2xl font-bold font-indie"> {index + 1 }/{messages.length } </p>
-        </div>
-        
-      </footer>
-        
+        <footer className='w-full relative flex justify-center flex-col '>
+          <div className=" w-full border-solid border-y-2 text-center p-4 border-black font-indie cursor-pointer" onClick={()=>changeMessage() } >
+              <p className="text-3xl font-indie ">{messages[index] }</p>
+          </div>
+          <div className="w-full px-6 flex justify-between items-center mt-2">
+              <p className="text-2xl font-bold font-indie">{`${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()} `}</p>
+              <p className="text-2xl font-bold font-indie"> {index + 1 }/{messages.length } </p>
+          </div>
+          
+        </footer>
+      </div>
     </div>
   );
 }
